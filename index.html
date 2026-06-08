@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>프로젝트 목적</title>
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Pretendard', sans-serif;
+    background: #f5f5f0;
+    color: #1a1a1a;
+    min-height: 100vh;
+    padding: 32px 40px;
+    overflow-x: hidden;
+  }
+
+  .header {
+    margin-bottom: 24px;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #1a1a1a;
+    line-height: 1.1;
+  }
+
+  .subtitle-banner {
+    margin: 20px 0 28px;
+    background: #fef08a;
+    border-radius: 8px;
+    padding: 16px 24px;
+    text-align: center;
+    border-left: 4px solid #eab308;
+  }
+
+  .subtitle-banner p {
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #1a1a1a;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    position: relative;
+    border-top: 3px solid transparent;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  }
+
+  .card-badge {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fef08a;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 14px;
+    color: #1a1a1a;
+  }
+
+  .card-divider {
+    width: 40px;
+    height: 2px;
+    background: #e5e5e5;
+    margin-bottom: 14px;
+  }
+
+  .card-desc {
+    font-size: 12.5px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #444;
+    word-break: keep-all;
+  }
+
+  .highlight {
+    background: #fef08a;
+    font-weight: 700;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+
+  .card:nth-child(1) { border-top-color: #eab308; }
+  .card:nth-child(2) { border-top-color: #1a1a1a; }
+  .card:nth-child(3) { border-top-color: #6b7280; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 class="title">프로젝트 목적</h1>
+</div>
+
+<div class="subtitle-banner">
+  <p>SAP ERP 기반으로 기업 프로세스를 재설계하고,<br>
+  모듈 통합과 협업을 통해 실무 수준의 전사적 시스템 구현 역량을 키우는 것을 목적으로 함</p>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <span class="card-badge">목적 1</span>
+    <div class="card-title">비즈니스 프로세스<br>재설계(BPR)</div>
+    <div class="card-divider"></div>
+    <p class="card-desc">
+      기존 기업 프로세스를 그대로 따르는 것이 아니라,
+      업무 흐름을 분석하여 실무 프로젝트에 맞춰
+      <span class="highlight">재설계</span>하고자 함
+    </p>
+  </div>
+
+  <div class="card">
+    <span class="card-badge">목적 2</span>
+    <div class="card-title">모듈 간 통합 이해</div>
+    <div class="card-divider"></div>
+    <p class="card-desc">
+      SD, MM, PP, FI 모듈 간 통합 프로세스를 설계하여
+      주문부터 매출까지의 데이터 흐름을 이해하고,
+      <span class="highlight">부서 간 연계 구조</span>를 파악할 수 있음
+    </p>
+  </div>
+
+  <div class="card">
+    <span class="card-badge">목적 3</span>
+    <div class="card-title">협업 기반<br>프로젝트 수행</div>
+    <div class="card-divider"></div>
+    <p class="card-desc">
+      <span class="highlight">팀 단위 협업</span>을 통해
+      각 모듈 간 연계를 고려하며 실제 기업 환경과
+      유사한 프로세스를 이해할 수 있음
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
